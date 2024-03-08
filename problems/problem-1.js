@@ -30,7 +30,6 @@ const people = [
 ]
 
 const peopleStrings = people // append your array methods here
-
-
+	.map(people => `Name: ${people.firstName} ${people.lastName}, Age: ${people.age}`)
 
 test("Problem 1", peopleStrings)

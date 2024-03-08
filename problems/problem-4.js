@@ -39,5 +39,10 @@ const items = [
 // Omit the 'age' element
 
 const person = items // append your code here
+	.filter(items => !items.includes('age'))
+	.reduce((prev, curr) => {
+		prev[curr[0]] = curr[1]
+		return prev
+	}, { })
 
 test("Problem 4", person)

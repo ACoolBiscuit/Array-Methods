@@ -50,5 +50,8 @@ const strings = [
 ]
 
 const jedi = strings // append your code here
+	.filter(jedis => jedis.includes('Jedi'))
+	.map(jediArray => JSON.parse(`{${jediArray}}`))
+	
 
 test("Problem 2", jedi)
